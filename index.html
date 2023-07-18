@@ -10,6 +10,12 @@ iframe {
 .player .head .back {
 	background-image: url("header.jpg");
 }
+.player .head .front {
+	height: unset;
+}
+.controllers {
+	height: 70px;
+}
 </style>
 <script>
 function loadlink() {
@@ -34,7 +40,7 @@ setInterval(function() { loadlink(); }, 5000);
   <div class="timeline">
     <div class="soundline"></div>
     <div class="controllers active">
-      <iframe height="50" src="http://192.168.9.105:8090/friyay.mp3"></iframe>
+      <audio src="http://192.168.9.105:8090/friyay.mp3" controls/>
     </div>
   </div>
 </div>
